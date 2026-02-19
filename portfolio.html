@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/auth.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', requireAuth);</script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <a href="portfolio.html" class="header-logo">Lucas</a>
+    <nav class="header-nav">
+      <a href="various.html">Various</a>
+    </nav>
+  </header>
+
+  <main class="portfolio-main">
+    <ul class="case-studies">
+
+      <!-- Case Study 1 -->
+      <li class="case-study-item">
+        <a href="case-study-1.html" class="case-study-link">
+          <div class="cs-image-wrap">
+            <!-- Replace the placeholder divs with <img src="images/cs1-a.jpg" alt="..."> -->
+            <div class="placeholder-img ph-cs1-a img-default"></div>
+            <div class="placeholder-img ph-cs1-b img-hover"></div>
+          </div>
+          <div class="cs-info">
+            <div>
+              <p class="cs-number">01</p>
+              <h2 class="cs-title">Brand Identity</h2>
+            </div>
+            <div class="cs-info-right">
+              <span class="cs-category">Branding &amp; Visual</span>
+              <span class="cs-arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Case Study 2 -->
+      <li class="case-study-item">
+        <a href="case-study-2.html" class="case-study-link">
+          <div class="cs-image-wrap">
+            <div class="placeholder-img ph-cs2-a img-default"></div>
+            <div class="placeholder-img ph-cs2-b img-hover"></div>
+          </div>
+          <div class="cs-info">
+            <div>
+              <p class="cs-number">02</p>
+              <h2 class="cs-title">Editorial Design</h2>
+            </div>
+            <div class="cs-info-right">
+              <span class="cs-category">Print &amp; Digital</span>
+              <span class="cs-arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Case Study 3 -->
+      <li class="case-study-item">
+        <a href="case-study-3.html" class="case-study-link">
+          <div class="cs-image-wrap">
+            <div class="placeholder-img ph-cs3-a img-default"></div>
+            <div class="placeholder-img ph-cs3-b img-hover"></div>
+          </div>
+          <div class="cs-info">
+            <div>
+              <p class="cs-number">03</p>
+              <h2 class="cs-title">Packaging</h2>
+            </div>
+            <div class="cs-info-right">
+              <span class="cs-category">Product Design</span>
+              <span class="cs-arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <!-- Case Study 4 -->
+      <li class="case-study-item">
+        <a href="case-study-4.html" class="case-study-link">
+          <div class="cs-image-wrap">
+            <div class="placeholder-img ph-cs4-a img-default"></div>
+            <div class="placeholder-img ph-cs4-b img-hover"></div>
+          </div>
+          <div class="cs-info">
+            <div>
+              <p class="cs-number">04</p>
+              <h2 class="cs-title">Campaign</h2>
+            </div>
+            <div class="cs-info-right">
+              <span class="cs-category">Art Direction</span>
+              <span class="cs-arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- Various Projects link -->
+    <div class="various-link-wrap">
+      <a href="various.html" class="various-link">
+        Various projects <span class="arrow">→</span>
+      </a>
+    </div>
+  </main>
+
+  <script>
+    // Sticky header border on scroll
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>

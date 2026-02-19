@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Design — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/auth.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', requireAuth);</script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <a href="portfolio.html" class="header-logo">Lucas</a>
+    <nav class="header-nav">
+      <a href="various.html">Various</a>
+    </nav>
+  </header>
+
+  <main class="cs-page-main">
+    <div class="cs-page-header">
+      <a href="portfolio.html" class="cs-page-back">← Back</a>
+      <h1 class="cs-page-title">Editorial Design</h1>
+      <p class="cs-page-meta">Print &amp; Digital</p>
+    </div>
+
+    <div class="cs-images">
+      <div class="cs-image-block full-width">
+        <div class="placeholder-img ph-cs2-a" style="height:100%;"></div>
+      </div>
+
+      <div class="cs-images-row">
+        <div class="cs-image-block">
+          <div class="placeholder-img ph-cs2-b" style="height:100%;"></div>
+        </div>
+        <div class="cs-image-block">
+          <div class="placeholder-img ph-cs2-a" style="height:100%;"></div>
+        </div>
+      </div>
+
+      <div class="cs-image-block full-width">
+        <div class="placeholder-img ph-cs2-b" style="height:100%;"></div>
+      </div>
+
+      <div class="cs-image-block full-width">
+        <div class="placeholder-img ph-cs2-a" style="height:100%;"></div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
