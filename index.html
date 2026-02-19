@@ -3,41 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enter — Portfolio</title>
+  <title>Lucas Speyer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <script>
-    // If already authenticated, redirect to portfolio
-    if (sessionStorage.getItem('auth')) {
-      // Will verify on portfolio.html side; just redirect
-      window.location.replace('portfolio.html');
-    }
-  </script>
 </head>
 <body>
-  <div class="password-page">
-    <div class="password-box">
-      <p class="site-name">Lucas&nbsp;— Portfolio</p>
-      <form class="password-form" id="login-form">
-        <input
-          type="password"
-          id="password-input"
-          placeholder="Password"
-          autocomplete="current-password"
-          required
-          autofocus
-        />
-        <button type="submit">Enter</button>
-        <p class="error-msg" id="error-msg" aria-live="polite">Incorrect password</p>
-      </form>
+  <div class="landing-page">
+    <div class="landing-content">
+      <p class="landing-intro">Hi! My name is Lucas Speyer.</p>
+      <p class="landing-sub">I'm a senior designer based in Buenos Aires, Argentina.</p>
+      <a href="enter.html" class="landing-btn">Portfolio</a>
     </div>
   </div>
-
-  <script src="js/auth.js"></script>
-  <script>
-    document.getElementById('login-form').addEventListener('submit', handleLogin);
-  </script>
 </body>
 </html>

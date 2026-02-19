@@ -1,6 +1,6 @@
 // Password protection for the portfolio site.
 // To change the password, update STORED_HASH with the SHA-256 hex of your new password.
-const STORED_HASH = '06670ae47e9dcae627053c4387f3f74ec68fdc9e6bd7554ce58f2fa862366702';
+const STORED_HASH = '8db0f46b6d4a64178715d5cdf20d8cb8c9759ab5dde906a963baee4c76e257e9';
 
 async function hashPassword(password) {
   const encoder = new TextEncoder();
@@ -28,6 +28,6 @@ async function handleLogin(event) {
 // Called on protected pages to redirect to login if not authenticated
 function requireAuth() {
   if (sessionStorage.getItem('auth') !== STORED_HASH) {
-    window.location.replace('index.html');
+    window.location.replace('enter.html');
   }
 }
