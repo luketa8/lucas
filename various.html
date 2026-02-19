@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Various Projects — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/auth.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', requireAuth);</script>
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <a href="portfolio.html" class="header-logo">Lucas</a>
+    <nav class="header-nav">
+      <a href="portfolio.html">Work</a>
+    </nav>
+  </header>
+
+  <main class="various-page-main">
+    <div class="various-header">
+      <a href="portfolio.html" class="cs-page-back">← Back</a>
+      <h1 class="various-title">Various Projects</h1>
+      <p class="various-subtitle">Selected work</p>
+    </div>
+
+    <div class="various-grid">
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <!-- Replace with: <img src="images/various-01.jpg" alt="Project 1" /> -->
+          <div class="placeholder-img ph-v1"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Branding</p>
+        </div>
+      </div>
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <div class="placeholder-img ph-v2"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Print</p>
+        </div>
+      </div>
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <div class="placeholder-img ph-v3"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Illustration</p>
+        </div>
+      </div>
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <div class="placeholder-img ph-v4"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Digital</p>
+        </div>
+      </div>
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <div class="placeholder-img ph-v5"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Packaging</p>
+        </div>
+      </div>
+
+      <div class="various-item">
+        <div class="various-item-image">
+          <div class="placeholder-img ph-v6"></div>
+        </div>
+        <div class="various-item-info">
+          <p class="various-item-title">Project Title</p>
+          <p class="various-item-type">Motion</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  </script>
+
+</body>
+</html>
