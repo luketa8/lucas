@@ -1,6 +1,6 @@
-// Password protection for the portfolio site.
+// Password protection for the portfolio site. designedly
 // To change the password, update STORED_HASH with the SHA-256 hex of your new password.
-const STORED_HASH = '8db0f46b6d4a64178715d5cdf20d8cb8c9759ab5dde906a963baee4c76e257e9';
+const STORED_HASH = '7dc6e758878496a2ad22118448242866bcf5a3810e1669a37ed981a668714078';
 
 async function hashPassword(password) {
   const encoder = new TextEncoder();

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brand Identity — Portfolio</title>
+  <title>HPE — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/auth.js"></script>
   <script>document.addEventListener('DOMContentLoaded', requireAuth);</script>
@@ -14,45 +14,151 @@
 <body>
 
   <header class="site-header" id="site-header">
-    <a href="portfolio.html" class="header-logo">Lucas</a>
+    <a href="portfolio.html" class="header-logo">Lucas Speyer</a>
     <nav class="header-nav">
-      <a href="various.html">Various</a>
     </nav>
   </header>
 
   <main class="cs-page-main">
     <div class="cs-page-header">
       <a href="portfolio.html" class="cs-page-back">← Back</a>
-      <h1 class="cs-page-title">Brand Identity</h1>
-      <p class="cs-page-meta">Branding &amp; Visual</p>
+      <div class="cs-ph-body">
+        <div class="cs-ph-left">
+          <span class="cs-ph-number">01</span>
+          <h1 class="cs-page-title">HPE</h1>
+          <p class="cs-ph-description">Driving design system adoption at enterprise scale. Overhaul of design libraries, tokens, code and guidance to enable scalable, consistent product experiences.</p>
+        </div>
+        <div class="cs-ph-right">
+          <div class="cs-ph-meta-item">
+            <span class="cs-ph-label">Period</span>
+            <p class="cs-ph-value">2023-</p>
+          </div>
+          <div class="cs-ph-meta-item">
+            <span class="cs-ph-label">Role</span>
+            <p class="cs-ph-value">Design Engineer — Design Systems</p>
+          </div>
+          <div class="cs-ph-meta-item">
+            <span class="cs-ph-label">Tools:</span>
+            <p class="cs-ph-value">Figma, Adobe Illustrator, React, Grommet, GitHub Copilot, Claude AI.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="cs-images">
-      <!-- Full-width image -->
-      <div class="cs-image-block full-width">
-        <!-- Replace with: <img src="images/cs1-01.jpg" alt="Brand Identity overview" /> -->
-        <div class="placeholder-img ph-cs1-a" style="height:100%;"></div>
-      </div>
+    <!-- Content sections -->
+    <div class="cs-sections-wrapper">
+    <div class="cs-sections">
 
-      <!-- Two-column images -->
-      <div class="cs-images-row">
-        <div class="cs-image-block">
-          <div class="placeholder-img ph-cs1-b" style="height:100%;"></div>
+            <!-- Type 2: Image left, Text right -->
+      <div class="cs-section cs-section--image-text">
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs1.png" alt="">
+          </div>
         </div>
-        <div class="cs-image-block">
-          <div class="placeholder-img ph-cs1-a" style="height:100%;"></div>
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+           <h2 class="cs-section-title">Rebuilding a shared foundation</h2>
+          <p class="cs-section-body">When I joined HPE, the design system was fragmented. Many products had been acquired and built under different design systems or custom solutions, which resulted in inconsistent components, heavy detachment, and growing divergence between Figma and code.</p>
+          <p class="cs-section-body"> My work focused on rebuilding trust in the system by making clear design decisions and redesigning its foundations: the component library, examples library, sticker sheets and icons library. In parallel, we rebuilt the design system guidance site to support a clearer “journey to one” — a shared source of truth grounded in tokens and practical usage rather than abstract rules.</p>
         </div>
       </div>
 
-      <!-- Full-width image -->
-      <div class="cs-image-block full-width">
-        <div class="placeholder-img ph-cs1-b" style="height:100%;"></div>
+      <!-- Type 1: Text left, Image right -->
+      <div class="cs-section cs-section--text-image">
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">From components to systems</h2>
+          <p class="cs-section-body">Looking at the design system as a product, a major issue was that Figma components were often too limiting for designers, which led teams to detach and rebuild them locally.</p>
+          <p class="cs-section-body">Instead of enforcing stricter rules, we focused on making the system more flexible and understandable. I contributed to the architecture of the new Figma libraries and token structure, helping align spacing, color, and typography decisions with real product needs. Reducing the gap between Figma and code became a core principle, ensuring designers and developers were working from the same mental model and system constraints.</p>
+        </div>
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs2.png" alt="">
+          </div>
+        </div>
       </div>
 
-      <!-- Full-width image -->
-      <div class="cs-image-block full-width">
-        <div class="placeholder-img ph-cs1-a" style="height:100%;"></div>
+      <!-- Type 2: Image left, Text right -->
+      <div class="cs-section cs-section--image-text">
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs4.png" alt="">
+            <small class="link-ext"><a href="https://design-system.hpe.design/" target="_blank">design-system.hpe.design</a></small>
+          </div>
+        </div>
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">Guidance that people actually use</h2>
+          <p class="cs-section-body">The existing documentation was thorough but impractical. It was difficult to scan, hard to apply, and disconnected from day-to-day work. I worked on the redo of the guidance site, redesigning its information architecture to clearly separate tutorials, how-tos, explanations, and reference material.</p>
+          <p class="cs-section-body">After that, I implemented the guidance in code using Grommet (React), updating the design system site, including complex anatomy diagrams. I also tested and added accessibility guidance for key components.</p>
+          <p class="cs-section-body">The outcome was fewer questions, less friction, and faster decision making across teams, measured in both outreach and usage data.</p>
+        </div>
       </div>
+
+
+            <!-- Type 1: Text left, Image right -->
+      <div class="cs-section cs-section--text-image">
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">Design system adoption as a product problem</h2>
+          <p class="cs-section-body">Adoption didn't happen by mandate — it happened through collaboration. I led enablement and adoption efforts by pairing directly with product designers and developers to align on priorities, tradeoffs, and realistic adoption paths. </p>
+          <p class="cs-section-body">Together, we audited existing products, identified gaps, and planned realistic adoption paths. For teams with specific needs, I supported the creation of product-specific auxiliary libraries built on top of design system tokens, allowing teams to move forward without breaking alignment. Feedback from these collaborations continuously flowed back into the system, shaping improvements and priorities.</p>
+        </div>
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs3.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Type 2: Image left, Text right -->
+      <div class="cs-section cs-section--image-text">
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs5.png" alt="">           
+          </div>
+        </div>
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">Outcomes</h2>
+          <p class="cs-section-body">This hands-on, systems-first approach increased adoption from zero active products to eight teams actively implementing the HPE Design System, each at different stages of maturity. Component detachment was reduced by 41%, signaling increased trust and usability of the system. More importantly, teams began to see the design system not as a constraint, but as an accelerator — a shared foundation that supported scale, consistency, and faster delivery.</p>
+        </div>
+      </div>
+
+                  <!-- Type 1: Text left, Image right -->
+      <div class="cs-section cs-section--text-image">
+        <div class="cs-section-text">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">Enabling rebrand at scale</h2>
+          <p class="cs-section-body">When HPE rolled out its new visual identity, the design system work we had already put in place became a force multiplier. Instead of each product team interpreting the rebrand independently, the system acted as a single source of truth. The brand DNA defined by leadership and marketing was translated into tokens, themes, and components that teams could immediately use to ship.</p>
+          <p class="cs-section-body">With the Design System encapsulating the new look and feel into the Landmark theme, product teams were able to adopt the rebrand quickly and consistently, reducing rework and avoiding fragmentation. The result was a cohesive visual transition across products, proving the design system’s role not just in consistency, but in enabling change at enterprise scale.</p>
+        </div>
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs6.png" alt="">
+          </div>
+        </div>
+      </div>
+
+            <!-- Type 2: Image left, Text right -->
+      <div class="cs-section cs-section--image-text">
+        <div class="cs-section-media">
+          <div class="cs-section-media-card">
+            <img src="img/cs1/cs7.png" alt="">           
+          </div>
+        </div>
+        <div class="cs-section-text" style="max-width: 83%;">
+          <div class="cs-section-rule"></div>
+          <h2 class="cs-section-title">Designing AI as an assistive layer</h2>
+          <p class="cs-section-body">A key challenge was integrating an AI agent into complex operational tools like GreenLake, where users manage servers and cloud infrastructure. Research showed that making AI too prominent in these high-stakes environments increased anxiety rather than reducing effort. The goal was to position AI as a supporting layer that helped users move faster without obscuring system behavior or user control.</p>
+          <p class="cs-section-body">We recommended a flow that starts with a lightweight side chat instead of rigid forms, with the AI asking clarifying questions only when needed. Routing and classification happened in the background, while users reviewed an editable summary before submission. Afterward, the AI shifted to proactive help by surfacing related cases and documentation. Visually, the AI was placed on a lower layer than the core application to reinforce trust and control.</p>
+        </div>
+      </div>
+
+
+    </div>
     </div>
   </main>
 
