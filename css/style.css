@@ -1,6 +1,6 @@
 /* ===========================
-   Base & Reset
-   =========================== */
+Base & Reset
+=========================== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -32,8 +32,8 @@ img {
 }
 
 /* ===========================
-   Landing Page
-   =========================== */
+Landing Page
+=========================== */
 .landing-page {
   display: flex;
   align-items: center;
@@ -85,8 +85,8 @@ img {
 }
 
 /* ===========================
-   Password Page
-   =========================== */
+Password Page
+=========================== */
 .password-page {
   display: flex;
   align-items: center;
@@ -171,8 +171,8 @@ img {
 }
 
 /* ===========================
-   Site Header
-   =========================== */
+Site Header
+=========================== */
 .site-header {
   display: flex;
   align-items: center;
@@ -214,8 +214,8 @@ img {
 }
 
 /* ===========================
-   Portfolio Page
-   =========================== */
+Portfolio Page
+=========================== */
 .portfolio-main {
   padding: 0 0 80px;
 }
@@ -255,9 +255,9 @@ img {
 }
 
 .bottom-image {
-margin-top: -8rem;
-z-index: -1;
-position: relative;
+  margin-top: -8rem;
+  z-index: -1;
+  position: relative;
 }
 
 
@@ -284,8 +284,8 @@ position: relative;
   clip-path: polygon(0% 100%, 0% 100%, 0% 100%);
   transform: scale(1.04);
   transition:
-    clip-path 0.7s cubic-bezier(0.77, 0, 0.175, 1),
-    transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+  clip-path 0.7s cubic-bezier(0.77, 0, 0.175, 1),
+  transform 0.7s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 .pg-item:hover .pg-img--hover {
@@ -384,8 +384,8 @@ position: relative;
 }
 
 /* ===========================
-   Case Study Page
-   =========================== */
+Case Study Page
+=========================== */
 .cs-page-main {
   max-width: 1536px;
   margin: 0 auto;
@@ -528,8 +528,8 @@ position: relative;
 }
 
 /* ===========================
-   Case Study Content Sections
-   =========================== */
+Case Study Content Sections
+=========================== */
 .cs-sections-wrapper {
   background: #f6f6f6;
   width: 100vw;
@@ -566,14 +566,22 @@ position: relative;
   transform-style: preserve-3d;
   will-change: transform;
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1),
-              box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1),
-              color 0.3s ease;
+  box-shadow 0.5s cubic-bezier(0.23, 1, 0.32, 1),
+  color 0.3s ease;
   cursor: default;
 }
 
 .cs-closure:hover {
   color: #333333;
 }
+
+.centered-note {
+  font-size: 1.05rem;
+  font-family: 'Lexend', sans-serif;
+  margin: 24px auto;
+  text-align: center;
+}
+
 
 /* SVG animated border frame */
 .cs-closure-frame {
@@ -615,9 +623,9 @@ position: relative;
 }
 
 .cs-section-subtitle{ 
- font-size: 1.3rem;
+  font-size: 1.3rem;
   font-weight: 400;
-    line-height: 1.3;
+  line-height: 1.3;
   margin-bottom: 24px;
   font-family: '';
 }
@@ -660,15 +668,15 @@ position: relative;
     gap: 40px;
     padding: 56px 24px;
   }
-
+  
   .cs-section--image-text .cs-section-media {
     order: 0;
   }
-
+  
   .cs-section-title {
     font-size: 1.7rem;
   }
-
+  
   .cs-section-media-card {
     aspect-ratio: 3 / 2;
   }
@@ -708,8 +716,8 @@ position: relative;
 }
 
 /* ===========================
-   Various Projects Page
-   =========================== */
+Various Projects Page
+=========================== */
 .various-page-main {
   padding: 0 0 80px;
 }
@@ -792,10 +800,10 @@ position: relative;
 }
 
 /* ===========================
-   Placeholder Images (CSS gradients)
-   Replace with <img> tags pointing to
-   your actual image files.
-   =========================== */
+Placeholder Images (CSS gradients)
+Replace with <img> tags pointing to
+your actual image files.
+=========================== */
 .placeholder-img {
   display: block;
   width: 100%;
@@ -824,93 +832,93 @@ position: relative;
 .ph-v6 { background: linear-gradient(160deg, #e8d8d8 0%, #c9a8a8 100%); }
 
 /* ===========================
-   Responsive
-   =========================== */
+Responsive
+=========================== */
 @media (max-width: 768px) {
   .site-header {
     padding: 20px 24px;
   }
-
+  
   .cs-info {
     padding: 16px 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
   }
-
+  
   .cs-category {
     text-align: left;
   }
-
+  
   .cs-page-header {
     padding: 28px 24px 40px;
   }
-
+  
   .cs-ph-body {
     flex-direction: column;
     gap: 40px;
   }
-
+  
   .cs-ph-left {
     flex: none;
     max-width: 100%;
   }
-
+  
   .cs-ph-number {
     font-size: 6rem;
   }
-
+  
   .cs-page-title {
     font-size: 2.64rem;
   }
-
+  
   .cs-ph-right {
     padding-top: 0;
     gap: 24px;
   }
-
+  
   .cs-image-block.full-width {
     height: 50vw;
     min-height: 240px;
   }
-
+  
   .cs-images-row {
     grid-template-columns: 1fr;
   }
-
+  
   .various-grid {
     grid-template-columns: 1fr 1fr;
   }
-
+  
   .various-header {
     padding: 32px 24px 28px;
   }
-
+  
   .various-title {
     font-size: 1.8rem;
   }
-
+  
   .various-link-wrap {
     padding: 32px 24px 0;
   }
-
+  
   .cs-title {
     font-size: 1.2rem;
   }
-
+  
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .pg-item {
     border-right: none;
     aspect-ratio: 3 / 2;
   }
-
+  
   .pg-item:nth-child(3) {
     border-bottom: 1px solid #e8e8e8;
   }
-
+  
   .pg-title {
     font-size: 1.2rem;
   }
@@ -920,11 +928,11 @@ position: relative;
   .various-grid {
     grid-template-columns: 1fr;
   }
-
+  
   .various-item {
     border-right: none;
   }
-
+  
   .cs-image-wrap {
     height: 55vw;
     min-height: 220px;
