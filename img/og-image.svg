@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- White background -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="#111111"/>
+
+  <!-- Right soft panel -->
+  <rect x="820" y="4" width="380" height="626" fill="#f7f7f7"/>
+
+  <!-- Large LS watermark in right panel -->
+  <text
+    x="1010"
+    y="315"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-weight="700"
+    font-size="190"
+    fill="#ebebeb"
+    letter-spacing="14"
+  >LS</text>
+
+  <!-- LS foreground monogram (smaller, dark) -->
+  <text
+    x="1010"
+    y="315"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-weight="600"
+    font-size="80"
+    fill="#111111"
+    letter-spacing="10"
+  >LS</text>
+
+  <!-- Eyebrow label -->
+  <text
+    x="80"
+    y="228"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="400"
+    fill="#aaaaaa"
+    letter-spacing="6"
+  >PORTFOLIO</text>
+
+  <!-- Thin horizontal rule under eyebrow -->
+  <rect x="80" y="252" width="72" height="2" fill="#111111"/>
+
+  <!-- Main name -->
+  <text
+    x="80"
+    y="370"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-size="96"
+    font-weight="600"
+    fill="#111111"
+    letter-spacing="-3"
+  >Lucas Speyer</text>
+
+  <!-- Sub-name label -->
+  <text
+    x="82"
+    y="412"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-size="22"
+    font-weight="400"
+    fill="#aaaaaa"
+    letter-spacing="6"
+  >SENIOR DESIGNER</text>
+
+  <!-- Bottom detail -->
+  <text
+    x="82"
+    y="476"
+    font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+    font-size="15"
+    font-weight="400"
+    fill="#bbbbbb"
+    letter-spacing="3"
+  >BUENOS AIRES, ARGENTINA</text>
+</svg>
