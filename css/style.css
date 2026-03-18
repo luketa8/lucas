@@ -189,7 +189,7 @@ Site Header
 
 .site-header.scrolled {
   border-color: #e8e8e8;
-  /*background: #f7f7f7;*/
+  background: linear-gradient(to bottom, hsla(0, 0%, 90%, 0.8), #f7f7f7);
 }
 
 .header-logo {
